@@ -3,8 +3,8 @@ Created on Tues Apr 10 2018
 Used for reading and writing tiff stacks in python through c and cython.
 @author: CSmith
 
-Please run the following line to build extension
-python setup_all.py build_ext --inplace
+Please run the following line to build extension of tiff_stacks_python
+python setup.py build_ext --inplace
 """
 
 
