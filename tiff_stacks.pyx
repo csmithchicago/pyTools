@@ -48,6 +48,7 @@ def write_stack_function(np.ndarray[float, ndim=3, mode="c"] img_stack, filename
 
 def write_stacks(img_stack, filename):
     
+    new_img = np.ascontiguousarray(img_stack)
     if img_stack.ndim == 2:
         new_img = np.ascontiguousarray(img_stack[:,:,np.newaxis])
     
