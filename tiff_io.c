@@ -323,7 +323,7 @@ int PythonReadTiffStacks(float* img_array, int* shape, const char* filename)
 
 	TIFFClose(image);
 
-	printf("done importing tiff stack!\n");
+	/* printf("done importing tiff stack!\n"); */
 
 
 	return 0;
@@ -403,7 +403,7 @@ int WriteTiffStacks(float* img_array, int* shape, const char* filename)
 	TIFFClose(image);
 	free(buffer);
 
-	printf("done saving tiff stack!\n");
+	/* printf("done saving tiff stack!\n"); */
 
 	return 0;
 }
@@ -623,7 +623,7 @@ int ReadTiffStacks(float** img_array, int* shape, const char* filename)
 
 	TIFFClose(image);
 
-	printf("done importing tiff stack!\n");
+	/* printf("done importing tiff stack!\n"); */
 
 
 	return 0;

@@ -51,7 +51,8 @@ def write_stacks(img_stack, filename):
     new_img = np.ascontiguousarray(img_stack)
     if img_stack.ndim == 2:
         new_img = np.ascontiguousarray(img_stack[:,:,np.newaxis])
-    
+    else:
+        new_img = np.ascontiguousarray(img_stack)
     filename = str(filename)
     
     write_stack_function(new_img, filename)
