@@ -19,7 +19,7 @@ Cython.Compiler.Options.annotate = True
 
 ext_modules = [Extension("tiff_stacks_python",sources=["tiff_stacks.pyx", "tiff_io.c"], 
                          extra_link_args = ['-ltiff', '-lm'],
-                         include_dirs=[numpy.get_include()],
+                         include_dirs=[numpy.get_include(), '/home/coreys/anaconda3/include'],
                          extra_compile_args=['-std=c99'])]
 
 setup(
